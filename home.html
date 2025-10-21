@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio shiekh Amber Jawed</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Monoton&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+<style>
+ *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: conic-gradient(from 0deg, grey,black, gray);
+    color:grey;
+    min-height: 100vh;
+}
+ header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px;
+    background: conic-gradient(from 0deg, grey,black, gray);
+}
+ .logo{
+    font-size:2.5rem;
+    font-style: italic;
+    color:orangered;
+    text-transform:uppercase;
+    word-spacing:5px;
+    font-family:'Rubik Moonrocks', cursive;
+}
+ nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin: 0;
+    padding:0;
+}
+ nav li{
+   margin-left:20px;
+      
+}
+ nav li:hover{
+    background-color: blue;
+    cursor:all-scroll;
+}
+ nav a {
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-style: italic;
+    color:white;
+    font-size:1.25rem;
+}
+ .container{
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: conic-gradient(from 0deg, grey,black, gray);
+    padding: 40px 20px;
+    margin: 20px;
+}
+ .content{
+    width:50%;
+    padding-right: 20px;
+}
+ .content h3{
+    font-size:1.25rem;
+    color:black;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family:'Dancing Script', cursive;
+    margin-bottom: 10px;
+}
+ .content h3 span{
+    color:orangered;
+    font-size:6.25rem;
+}
+ .content h1{
+    color: black;
+    font-size:2.5rem;
+    font-style: italic;
+    text-align: center;
+    font-family:'Monoton', cursive;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+ .content h1 span{
+    color:orangered;
+}
+ .btn{
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+    margin-bottom:20px;
+}
+ #hire-btn {
+    width:30%;
+    text-transform: capitalize;
+    background:black;
+    color: white;
+    font-weight:bold;
+    border-radius:30px;
+    padding:15px;
+    font-size: 15px;
+    border:none;
+    font-family: 'Dancing Script', cursive;
+}
+ .social-icons {
+    display: flex;
+    justify-content: center;
+    gap:30px;     
+    font-size:3.75rem;
+    margin-top:40px;
+}
+ .container-img img{
+    width:100%;
+    max-width:600px;
+    height:auto;
+    aspect-ratio: 1;
+    border:5px solid black;
+    border-radius:50%;
+    object-fit:cover;
+}
+footer {
+    background: conic-gradient(from 0deg, grey,black, gray);
+    color:white;
+    text-align: center;
+    padding:20px;
+    font-size:1.125rem;
+    text-transform:capitalize;
+    margin-bottom: 0;
+    font-family: 'Dancing Script', cursive;
+} 
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 2rem;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content h3 span {
+        font-size: 5rem;
+    }
+    .social-icons {
+        font-size: 3rem;
+        gap: 20px;
+    }
+    .container-img img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    nav li {
+        margin-left: 0;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+        margin: 10px;
+    }
+    .content {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .content h1 {
+        font-size: 1.75rem;
+    }
+    .content h3 {
+        font-size: 1rem;
+    }
+    .content h3 span {
+        font-size: 4rem;
+    }
+    #hire-btn {
+        width: 50%;
+    }
+    .social-icons {
+        font-size: 2.5rem;
+        gap: 15px;
+    }
+    .container-img img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav a {
+        font-size: 0.875rem;
+    }
+    .content h1 {
+        font-size: 1.5rem;
+    }
+    .content h3 span {
+        font-size: 3rem;
+    }
+    .social-icons {
+        font-size: 2rem;
+        gap: 10px;
+    }
+    .container-img img {
+        max-width: 250px;
+        border-width: 3px;
+    }
+    footer {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+</style>
+<body>
+    
+   <header>
+    <div class="logo">shiekh amber jawed</div>
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a  href="#">about</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">account</a></li>
+        </ul>
+    </nav>
+<!-- <div class="input">
+  <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search" placeholder="Search"></div>
+    <button><i class="fa-brands fa-whatsapp"></i>chat on watsapp</button> -->
+   </header>
+    <section class="container">
+    <div class="content">
+        <h3>
+            <span>H</span>i, I’m shiekh amber jawed
+        </h3>
+        <h1 ><span>F</span>rontend <span>W</span>eb <span>D</span>eveloper</h1>
+
+          <div class="btn">
+            <button id="hire-btn">hire me</button></div>
+           <div class="social-icons">
+<a href="#"><i class="fa-brands fa-facebook" style="color: #1877f2;"></i></a>   <!-- Facebook Blue -->
+<a href="#"><i class="fa-brands fa-instagram" style="color: #e4405f;"></i></a>  <!-- Instagram Pink -->
+<a href="#"><i class="fa-brands fa-square-twitter" style="color: #1da1f2;"></i></a> <!-- Twitter Blue -->
+</div>
+</div>
+ <div class="container-img">
+        <img src="../picture/mysnap2.png" alt="img">
+        </div>
+ </section>
+   <footer>
+    <p>portfolio | shiekh amber jawed</p>
+   </footer>
+      
+</body>
+</html>
