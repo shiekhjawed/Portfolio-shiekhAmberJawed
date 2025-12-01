@@ -15,12 +15,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
  }
  body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: conic-gradient(from 0deg, grey,black, gray);
     color:grey;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
  header{
     display: flex;
@@ -32,7 +36,7 @@
  .logo{
     font-size:2.5rem;
     font-style: italic;
-    color:orangered;
+    color:seagreen;
     text-transform:uppercase;
     word-spacing:5px;
     font-family:'Rubik Moonrocks', cursive;
@@ -53,7 +57,7 @@
     cursor:all-scroll;
 }
  nav a {
-    font-family: 'Dancing Script', cursive;
+
     text-decoration: none;
     text-transform: capitalize;
     font-style: italic;
@@ -62,7 +66,7 @@
 }
  .container{
     height: auto;
-    min-height: 80vh;
+    min-height:100vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -73,32 +77,39 @@
  .content{
     width:50%;
     padding-right: 20px;
+    margin-bottom: 10px;
 }
  .content h3{
-    font-size:1.25rem;
-    color:black;
+font-family: 'Dancing script';
+
+    font-size:1.8rem;
+    color:white;
     text-align: center;
     text-transform: capitalize;
     font-style: italic;
-    font-family:'Dancing Script', cursive;
+
     margin-bottom: 10px;
 }
  .content h3 span{
-    color:orangered;
+    color:seagreen;
     font-size:6.25rem;
 }
  .content h1{
-    color: black;
+    font-family: 'Rubik Moonrocks', cursive;
+
+    color:white;
     font-size:2.5rem;
     font-style: italic;
     text-align: center;
-    font-family:'Monoton', cursive;
+
     text-transform: capitalize;
     margin-bottom: 20px;
 }
  .content h1 span{
-    color:orangered;
+    color:seagreen;
+
 }
+
  .btn{
     display: flex;
     justify-content:center;
@@ -106,12 +117,12 @@
     margin-bottom:20px;
 }
  #hire-btn {
-    width:30%;
+    width:25%;
     text-transform: capitalize;
-    background:black;
+    background: seagreen;
     color: white;
     font-weight:bold;
-    border-radius:30px;
+    border-radius:10px;
     padding:15px;
     font-size: 15px;
     border:none;
@@ -126,11 +137,13 @@
 }
  .container-img img{
     width:100%;
-    max-width:600px;
+    max-width:400px;
     height:auto;
-    aspect-ratio: 1;
-    border:5px solid black;
-    border-radius:50%;
+    border:5px solid seagreen;
+    border-radius:20%;
+    filter: blur(20%);
+    
+
     object-fit:cover;
 }
 footer {
@@ -141,7 +154,6 @@ footer {
     font-size:1.125rem;
     text-transform:capitalize;
     margin-bottom: 0;
-    font-family: 'Dancing Script', cursive;
 } 
 
 /* Responsive Design */
@@ -246,26 +258,24 @@ footer {
 <body>
     
    <header>
-    <div class="logo">shiekh amber jawed</div>
+    <div class="logo">portfolio</div>
     <nav>
         <ul>
             <li><a href="#">home</a></li>
             <li><a  href="#">about</a></li>
             <li><a href="#">project</a></li>
-            <li><a href="#">account</a></li>
+            <li><a href="#">contact</a></li>
         </ul>
     </nav>
-<!-- <div class="input">
-  <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search" placeholder="Search"></div>
-    <button><i class="fa-brands fa-whatsapp"></i>chat on watsapp</button> -->
+
    </header>
     <section class="container">
     <div class="content">
         <h3>
             <span>H</span>i, I’m shiekh amber jawed
         </h3>
-        <h1 ><span>F</span>rontend <span>W</span>eb <span>D</span>eveloper</h1>
-
+        <h1 ><span>F</span>ull <span>s</span>track <span>m</span>ern <span>D</span><span>eveloper</span></h1>
+<p style="color: white;">A highly skilled Full-Stack MERN Developer and professional trainer with expertise in building modern, scalable web applications. Passionate about mentoring learners through hands-on <span style="margin-left:100px;">projecct best practices, and real-world development workflows.</span></p>
           <div class="btn">
             <button id="hire-btn">hire me</button></div>
            <div class="social-icons">
@@ -279,7 +289,7 @@ footer {
         </div>
  </section>
    <footer>
-    <p>portfolio | shiekh amber jawed</p>
+    <p>© portfolio 2025 shiekh amber jawed|| All rights reserved.</p>
    </footer>
       
 </body>
