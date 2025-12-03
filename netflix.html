@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my own first htmml css  netflix website/title>
+    <title>MY own first successful html css  website netflix</title>
+    <meta property="og:title" content="My Awesome Website">
+<meta property="og:description" content="Explore my latest projects and tutorials.">
+<meta property="og:image" content="https://yourwebsite.com/images/preview.jpg">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -309,6 +314,213 @@ button{
     border-right:none;
     margin-left:100px;
 }
+/* ====================== RESPONSIVE DESIGN ====================== */
+
+/* Large Tablets & Small Laptops (up to 1200px) */
+@media (max-width: 1200px) {
+    #sign {
+        margin-left: 500px;
+    }
+    .logo-text input {
+        width: 300px;
+    }
+}
+
+/* Tablets (up to 992px) */
+@media (max-width: 992px) {
+    nav {
+        padding: 15px;
+    }
+    .logo {
+        font-size: 40px;
+    }
+    #sign {
+        margin-left: 200px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .logo-text h1 {
+        font-size: 45px;
+    }
+    .logo-text h3 {
+        font-size: 18px;
+    }
+    .logo-text input {
+        width: 280px;
+        padding: 12px;
+    }
+    .logo-text button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .trending {
+        gap: 15px;
+    }
+    .digit1, .digit2, .digit3, .digit4, .digit5 {
+        width: 160px;
+        height: 240px;
+    }
+    .trending h1 {
+        font-size: 120px;
+    }
+
+    .text-card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+    header {
+        height: 600px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .logo {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    #sign {
+        margin-left: 0;
+        margin: 0 auto;
+        display: block;
+        width: 120px;
+    }
+
+    .logo-text {
+        padding: 20px;
+    }
+    .logo-text h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .logo-text h3 {
+        font-size: 18px;
+    }
+    .logo-text p {
+        font-size: 14px;
+    }
+    .logo-text input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .logo-text button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Stack trending movies vertically on mobile */
+    .trending {
+        flex-direction: column;
+        align-items: center;
+    }
+    .digit1, .digit2, .digit3, .digit4, .digit5 {
+        width: 80%;
+        max-width: 350px;
+        height: 400px;
+    }
+    .trending h1 {
+        font-size: 180px;
+        margin-top: 100px;
+    }
+
+    /* Cards stack vertically */
+    .text-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .text-query {
+        margin-left: 20px;
+        width: 90%;
+    }
+    .query summary {
+        font-size: 18px;
+    }
+    .query i {
+        margin-left: 70% !important;
+    }
+
+    .membership input,
+    .membership button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+    .link div {
+        align-items: center;
+    }
+
+    button[onclick] {
+        margin-left: 20px;
+    }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 30px;
+    }
+    .logo-text h1 {
+        font-size: 28px;
+    }
+    .logo-text h3 {
+        font-size: 16px;
+    }
+    .logo-text p {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .trending h1 {
+        font-size: 140px;
+    }
+
+    .digit1, .digit2, .digit3, .digit4, .digit5 {
+        height: 350px;
+    }
+
+    .query summary {
+        font-size: 16px;
+    }
+    .query i {
+        margin-left: 60% !important;
+        font-size: 24px;
+    }
+
+    .membership p {
+        margin-left: 5% !important;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
 </style>
 <body>
     <header>
@@ -444,6 +656,6 @@ button{
      <a href="" style="color:skyblue;">Learn More</a></p>
      <br> <br><br><br>
     </body>
-
 </html>
+
 
