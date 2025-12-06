@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    body{
+      font-family: 'Courier New', Courier, monospace;
+      background:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      
+    }
+      .container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      max-width:800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-top:5px solid purple;
+    }
+
+    .email input, 
+    .password input, 
+    .Re-type input, 
+    .firstname input, 
+    .lastname input {
+      border:1px solid grey;
+      
+      width:80%;
+      font-size: 16px;
+      padding: 8px;
+      background: transparent;
+    }
+
+    /* First + Last Name side by side */
+    .first-lastname {
+      display: flex;
+      gap:30px;
+      width:80%;
+
+    }
+    .first-lastname input {
+
+   flex:1;              /* for space equal */
+  padding: 8px;    
+  font-size: 16px;
+  border: 1px solid grey;
+  background: transparent;
+}
+
+    /* Dropdown */
+    .option select {
+      width:80%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    /* Radio Buttons */
+    fieldset {
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 5px;
+      width:80%;
+      
+    }
+
+    legend {
+      font-size: 14px;
+      color: #333;
+
+    }
+   
+    
+
+    /* Checkboxes */
+    .term, .newsletter {
+      font-size: 14px;
+    }
+    .submit-btn button {
+  background:purple;
+  color: white;
+  padding:10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  width:80%;
+  
+  
+}
+.submit-btn{
+  width:100%;
+}
+
+    
+   
+     
+</style>
+<body>
+  <div class="container">
+    <h1 style="text-align:center;">Responsive Registration form</h1>
+    <div class="email">
+      <i class="fa-solid fa-envelope"></i>
+    <input type="email" placeholder="Email" required />
+    </div>
+    <div class="password">
+      <i class="fa fa-lock"></i>
+      <input type="password" placeholder="Password" required/>
+ </div>
+  <div class="Re-type">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Re-type Password" required/>
+      </div>
+      <div class="first-lastname">
+           <i class="fa fa-user"></i>
+        <input type="text" name="firstname" placeholder="First Name"/>
+        
+           <i class="fa fa-user"></i>
+        <input type="text" name="lastname" placeholder="Last Name"/>
+        </div>
+        <div class="radio-btn">
+          <fieldset>
+    <legend>Gender</legend> 
+    <input type="radio" name="gender" id="male"> Male
+    <input type="radio" name="gender" id="female"> Female<br><br>
+     </fieldset>
+    </div>
+    <div class="option">
+        <select>
+      <option>-------------------------------------------- Select Current country -------------------------------------------</option>
+      <option>china</option>
+      <option>Uk</option>
+      <option>USA</option>
+      <option>canada</option>
+    </select>
+    </div>
+    <div class="term">
+      <label><input type="checkbox" required> I agree with terms and condition</label>
+
+    </div> 
+    <div class="newsletter">
+       <label><input type="checkbox" required> I want to receive the newsletter</label>
+      </div>
+      <div class="submit-btn" >
+       <button type="submit">Register</button>
+       </div>
+    
+    
+    </div>
+</body>
+</html>
