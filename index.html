@@ -1,72 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Aptech Demo</title>
+  <meta charset="UTF-8">
+  <title>CSS Assignment</title>
   <style>
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(120deg, #007bff, #00bcd4);
-      color: white;
+      margin: 10px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: black;
       text-align: center;
-      margin: 0;
-      padding: 0;
     }
-    header {
-      background: rgba(0, 0, 0, 0.2);
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 0.5rem 0 0;
-    }
-    main {
-      padding: 3rem 1rem;
-    }
-    main h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #ffe;
+
+    .heading {
+      font-size: 28px;
+      margin-top: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
       text-decoration: underline;
+
+    }
+
+    .sub-heading {
+      background-color: #dbbfbf;
+      font-size: 32px;
+      color: purple;
+      padding: 10px;
+      margin: 20px ;
+      font-weight: bold;
+      text-transform: capitalize;
+     
+    }
+
+    .container {
+      background-color: #b16d6db3;
+      width: 600px;
+      
+      padding: 40px;
+    
+      border-top-left-radius: 150px  100px;
+     border-bottom-right-radius: 150px  100px;
+     border-top-right-radius:150px 100px;
+      border-bottom-left-radius: 150px 100px;
+      box-shadow: 4px 8px rgba(0, 0.5, 0, 0.2);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .box  {
+      background-color: white;
+      padding: 50px;
+      border-radius: 20px;
+      text-align: left;
+      font-size: 15px;
+      border-top-left-radius: 150px  100px;
+      line-height: 1.5;
+      box-shadow:  4px 8px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+      font-style: italic;
+     
+   
+    }
+
+    .box::first-letter {
+      font-size: 30px;
+      color: darkblue;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      margin-right: 5px;
+    }
+    .box::first-line {
+      font-weight: bold;
+      color: orangered;
+    }
+
+  
+    
+    .footer {
+      background-color: purple;
+      color: white;
+      margin-top: 20px;
+      padding: 10px ;
+      border-radius:  10px ;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: underline;
+      margin:  30px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      color: green;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Student Aptech Demo</h1>
-    <p>Created by <strong>Shiekh Jawed</strong></p>
-  </header>
 
-  <main>
-    <h2>🚀 My First GitHub Pages Website</h2>
-    <p>This is my first project deployed using GitHub Pages.</p>
-    <p>I'm learning how to build, manage, and host a website online.</p>
+  <div class="heading">This is a Css Assignment Two</div>
+  <div class="sub-heading">This is Div Block One</div>
 
-    <p><a href="https://github.com/shiekhjawed/studentaptech-demo" target="_blank">
-      View My Project on GitHub
-    </a></p>
-  </main>
+  <div class="container">
+    <div class="box"> Success is often the result of consistent hard work, determination, and perseverance. While talent can open doors, it is hard work that keeps them open. Those who commit to their goals, put in the effort daily, and stay focused despite challenges are the ones who achieve lasting success. Hard work turns dreams into reality.
+   
+      <div class="footer">
+      <a href="#">Google</a>
+      <a href="#">YouTube</a>
+      <a href="#">Facebook</a>
+    </div>
 
-  <footer>
-    &copy; 2025 Student Aptech Demo | Built with ❤️ by Shiekh Jawed
-  </footer>
 </body>
 </html>
-
-
 
