@@ -127,6 +127,8 @@ font-family: 'Dancing script';
     font-size: 15px;
     border:none;
     font-family: 'Dancing Script', cursive;
+    /* INSET BOX SHADOW */
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.4),
 }
  .social-icons {
     display: flex;
@@ -142,6 +144,17 @@ font-family: 'Dancing script';
     border:5px solid seagreen;
     border-radius:20%;
     filter: blur(20%);
+     box-shadow: 0 15px 30px rgba(0,0,0,0.6),
+                0 0 20px seagreen;
+
+
+}
+.container-img img:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8),
+                0 0 30px seagreen;
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
     
 
     object-fit:cover;
@@ -294,6 +307,7 @@ footer {
       
 </body>
 </html>
+
 
 
 
